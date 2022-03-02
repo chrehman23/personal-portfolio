@@ -46,6 +46,23 @@
         .exp li {
             list-style: unset;
         }
+
+        .profile-image-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-image-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            z-index: 9;
+            height: 39px;
+            background-color: #4d63dd;
+            clip-path: polygon(30% 82%, 100% 0%, 100% 100%, 0 99%, 0% 38%);
+        }
     </style>
 </head>
 
@@ -189,7 +206,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1 col-sm-12 text-center overflow-hidden">
-                    <div class="hero-profile-img wow fadeInUp" data-wow-duration="2s" data-wow-delay=".9s">
+                    <div class="hero-profile-img wow fadeInUp profile-image-card" data-wow-duration="2s"
+                        data-wow-delay=".9s">
                         <img src="assets/img/IMG20220226130700-removebg.png" style="transform: rotate(-6deg);"
                             alt="Spruce" class="img-fluid">
                     </div>
@@ -205,7 +223,7 @@
                 <div class="col-12 text-center col-lg-10 offset-lg-1">
                     <div class="section-title-one wow fadeInDown" data-wow-duration="1.2s">
                         <span>my services</span>
-                        <h2>I’m MERN Stack & Web Design , Developer and Check What’s Services I gave in Companies.
+                        <h2>I’m a MERN Stack & Web Design, Developer and Check What Services did I gave in Companies.
                         </h2>
                     </div>
                 </div>
@@ -217,7 +235,7 @@
                             <img src="assets/img/icons/creativity.png" alt="">
                         </div> -->
                         <h3>Creative Design</h3>
-                        <p>HTML5,CSS3,JavaScript are the awasam languauges for develping creatvie design on web
+                        <p>HTML5,CSS3,JavaScript are the awesome languauges for develping creatvie design on web
                             interacitive pages.
                         </p>
                     </div>
@@ -239,8 +257,8 @@
                             <img src="assets/img/icons/seo.png" alt="">
                         </div> -->
                         <h3>Node JS/Express JS</h3>
-                        <p>Rrestfull Apis with good sequrity lavel and mobile apis alos having auto mutomation email
-                            sending services.</p>
+                        <p>Restful Apis with good security level and mobile apis also having automation email sending
+                            services.</p>
                     </div>
                 </div>
                 <!-- /.single-service -->
@@ -251,7 +269,7 @@
                             <img src="assets/img/icons/code.png" alt="">
                         </div> -->
                         <h3>Data Base</h3>
-                        <p>Worked with Mongo DB and SQL and other are the similer to them.</p>
+                        <p>Worked with Mongo DB and SQL and other similar to these.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -275,7 +293,7 @@
                 <!-- /.single-service -->
             </div>
             <div class="contact-promo text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
-                Have any Work? Fell Free to - <a href="#contact">Contact Me</a>
+                Have any Work? Feel Free to - <a href="#contact">Contact Me</a>
             </div>
         </div>
     </section>
@@ -319,11 +337,11 @@
 
                 <div class="col-lg-6 offset-lg-1 col-12 wow fadeInRight" data-wow-duration="1.2s" data-wow-delay=".4s">
                     <div class="about-content">
-                        <h1>Hello! I,m Abdur Rehman Web Design & MERN Stack and Web Developer.</h1>
-                        <h3>Have 3.5 Years Experienced</h3>
+                        <h1>Hello! I'm Abdur Rehman Web Design & MERN Stack and Web Developer.</h1>
+                        <h3>Have 3.5 Years of Experience</h3>
                         <p>I am passionate and hardworking Mern Stack Developer also having expertise in Microsoft
                             office especially in Excel. I have been working with government and non-government
-                            organizations as IT expert and accountant My life's goal is to contribute my skills and
+                            organizations as an IT expert and accountant.My life's goal is to contribute my skills and
                             learning for the development and betterment of this nation.</p>
 
                         <div class="row mt-4">
@@ -353,8 +371,11 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-12 wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay=".1s">
-                    <div class="main-profile-img bg-transparent">
-                        <img src="assets/img/IMG20220226130658-removebg-preview.png" alt="profile image">
+                    <div class="main-profile-img bg-transparent ">
+                        <div class="profile-image-card">
+                            <img src="assets/img/IMG20220226130658-removebg-preview.png"
+                                style="transform: rotate(-6deg);" alt="profile image">
+                        </div>
                         <span>+</span>
                         <div class="dots_animate"></div>
                     </div>
@@ -369,7 +390,7 @@
                 <div class="col-12 text-center col-lg-10 offset-lg-1">
                     <div class="section-title-one">
                         <span>My resume</span>
-                        <h2>High Skilled Provide High Quality </h2>
+                        <h2>High Skills Provide High Quality </h2>
                     </div>
                 </div>
             </div>
@@ -389,7 +410,7 @@
                                         role="tab" aria-controls="v-pills-job" aria-selected="false">Experience</a>
                                     <a class="nav-link" id="v-pills-awards-tab" data-toggle="pill"
                                         href="#v-pills-awards" role="tab" aria-controls="v-pills-awards"
-                                        aria-selected="false">CIRTIFICATIONS</a>
+                                        aria-selected="false">CERTIFICATIONS</a>
                                 </div>
                             </div>
 
@@ -412,8 +433,8 @@
                                             </div>
                                             <h3>FSC PRE-ENGINEERING</h3>
                                             <h5>Institute of Punjab college of science (Faisalabad, Pakistan)</h5>
-                                            <p>I did some to courses from university of Udemy like web development ,UI
-                                                design and some other IT related courses.</p>
+                                            <p>I have done some courses from Udemy like Web development, UI design and
+                                                some other IT and web development related courses.</p>
                                         </div>
                                         <div class="single-resume-item">
                                             <div class="year">
@@ -421,8 +442,8 @@
                                             </div>
                                             <h3>ACCA (ASSOCIATION OF CHARTERED CERTIFIED ACCOUNTANTS)</h3>
                                             <h5>SKANS School of accountancy (Lahore, Pakistan) (In progress)</h5>
-                                            <p>I have cleard fundamantal of accs with in one year also with that done my
-                                                first one year enturnship in web development</p>
+                                            <p>I have cleared fundamentals of ACCA within one year and also with that
+                                                done my first one year internship in web development.</p>
                                         </div>
                                         <div class="single-resume-item">
                                             <div class="year">
@@ -430,8 +451,8 @@
                                             </div>
                                             <h3>B.Sc. in Computer Science & Engineering</h3>
                                             <h5>Virtual university (In progress)</h5>
-                                            <p>I started my graguation from virtual university due to having good job in
-                                                web develpment in good company.</p>
+                                            <p>I started my graduation in Computer Science from Virtual University due
+                                                to having good job in Web development in a good company.</p>
                                         </div>
                                     </div>
 
@@ -596,7 +617,7 @@
                 <div class="col-12 text-center col-lg-10 offset-lg-1">
                     <div class="section-title-one">
                         <span>My portfolio</span>
-                        <h2>I’m Graphic & Web Design , Developer and Check my Recent Work I’ll Provide my Clients.</h2>
+                        <h2>I’m Web Design, Developer and Check my Recent Work that provided to my Clients.</h2>
                     </div>
                 </div>
             </div>
@@ -619,7 +640,9 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/01-SRH-1920x1090.png" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/01-SRH-1920x1090.png" alt="">
-                            <span link="http://google.com" class="zoom-icon">+</span>
+                            <span
+                                link="https://auth.20thfloor.com/?email=%2220thfloortechnologies@gmail.com%22&passoword=%22123456%22"
+                                class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -627,7 +650,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/09-call4cares-pharmacy-1920x1440.jpg" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/09-call4cares-pharmacy-1920x1440.jpg" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="https://call4cares.com/pharmacy" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -635,7 +658,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/arfakarimfoundation.org_blog-2_.png" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/arfakarimfoundation.org_blog-2_.png" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="https://arfakarimfoundation.org/" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -643,7 +666,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/06-call4cares-web-banner-1920x1440.jpg" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/06-call4cares-web-banner-1920x1440.jpg" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="https://call4cares.com" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -651,7 +674,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/07-call4cares-web-1920x1440.jpg" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/07-call4cares-web-1920x1440.jpg" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="https://call4cares.com" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -660,7 +683,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/renderhealth.com_.png" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/renderhealth.com_.png" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="https://renderhealth.com" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -677,7 +700,7 @@
                         <a href="assets/projects/renderhealth.com_health-care-provider.php.png" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/renderhealth.com_health-care-provider.php.png"
                                 alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="https://renderhealth.com/health-care-provider.php" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -686,7 +709,7 @@
                         <a href="assets/projects/08-call4cares-pharmacy-banner-1920x1440.jpg" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/08-call4cares-pharmacy-banner-1920x1440.jpg"
                                 alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="https://call4cares.com" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -694,7 +717,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/partycrack.com_ (3).png" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/partycrack.com_ (3).png" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="https://partycrack.com" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -702,7 +725,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/saloon-customer.ivylabtech.com_.png" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/saloon-customer.ivylabtech.com_.png" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="http://saloon-customer.ivylabtech.com" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -710,7 +733,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/saloon-customer.ivylabtech.com_ (2).png" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/saloon-customer.ivylabtech.com_ (2).png" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="http://saloon-customer.ivylabtech.com/login" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -726,7 +749,7 @@
                     <div class="single-portfolio-item">
                         <a href="assets/projects/saloon-customer.ivylabtech.com_ (1).png" class="popup-gallery">
                             <img class="img-fluid" src="assets/projects/saloon-customer.ivylabtech.com_ (1).png" alt="">
-                            <span class="zoom-icon">+</span>
+                            <span link="http://saloon-customer.ivylabtech.com/partner-home" class="zoom-icon">+</span>
                         </a>
                     </div>
                 </div>
@@ -809,7 +832,7 @@
                             <h3>Work Experience</h3>
 
 
-                            <li>Responsibil team lead.</li>
+                            <li>Responsible team lead.</li>
                             <li>Developed an interactive User Interface using HTML, CSS, react Material.
                             </li>
                             <li>Used React JS for creating reusable UI components (multi-field form elements, background
@@ -886,7 +909,7 @@
                             <li>Writing reusable, testable and efficient code.</li>
                             <li>Bundled the application through webpack.</li>
                             <li>Used JSON for accessing data from reactJS Services to Node.js APIs.</li>
-                            <li>Used node.js schodule for task automation for an efficient workflow and email
+                            <li>Used node.js schedule for task automation for an efficient workflow and email
                                 automation.</li>
                             <li>Used subversion for source control.</li>
                             <li>Integrating CI/CD pipeline into every project to make auto deployment.</li>
@@ -898,7 +921,7 @@
                             <li>Web design and development, application development using Photoshop, HTML, JavaScript
                                 and Typescript.</li>
                             <li>Designed dynamic and multi-browser compatible pages using HTML, CSS, MVC, React JS,
-                                and JavaScript and also developer responsive interface using Bootstrap and
+                                and JavaScript and also develop responsive interface using Bootstrap and
                                 SASS for CSS.</li>
                             <li>Created and deployed new features in order to sustain and amend existing applications
                                 under MVC pattern using react.JS,Bootstrap Node.JS and Express.</li>
@@ -911,7 +934,7 @@
                             <li>Developed client side validation code using JavaScript and React.JS.</li>
                             <li>Open githhub actions or Docker to run the application add to CI/CD in the project.</li>
                             <li>Worked on AWS cloud services to integrate the server side and client side code.</li>
-                            <li>Responsible for making the page dynamic using AJAX, JSON with restfull api.</li>
+                            <li>Responsible for making the page dynamic using AJAX, JSON with restful api.</li>
                             <li>Experienced in RESTful web services and OAuth to integrate in web apps.</li>
                             <li>Handled cross browser/platform compatibility issues (IE, Firefox, and Safari) on both
                                 Windows and MAC.</li>
