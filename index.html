@@ -1104,6 +1104,10 @@
             let url = $(this).attr("link");
             window.open(url, '_blank');
         })
+        $("#mobile-menu li").on('click', function () {
+            $(".mobile-nav").removeClass("show")
+            $("#hamburger").removeClass("open")
+        })
         let typed = new Typed('.profession', {
             strings: ["Freelance Developer", "Front-End Developer", "Back-End Developer", "React-JS Developer", "Node-JS Developer", 'MERN Stack Developer', 'Excel Expert'],
             typeSpeed: 80,
