@@ -708,7 +708,7 @@
                 <div class="col-lg-4 col-md-6 col-12 grid-item react">
                     <div class="single-portfolio-item" onclick="modalOpen({
                         project_title:'Project tile goes here',
-                        project_description:'Project tile goes here',
+                        project_description:'Project tile <br/> goes here',
                         images:['assets/projects/01-SRH-1920x1090.png','assets/projects/01-SRH-1920x1090.png'],
                         project_links:[{
                             link_title:'link goes here',
@@ -1233,23 +1233,25 @@
                             </div>
                         </div>
                         <div class="col-lg-7">
-                            <h3>Project description goose here</h3>
                             <p>
                                 <small>
                                     ${data.project_description}</small>
                             </p>
-                            <p><small>Project more details goose here. Project more details goose here.Project more
-                                    details goose here.Project more details goose here.Project more details goose
-                                    here.Project more details goose here.Project more details goose here.</small></p>
-                            <h5>Stack use in this projects</h5>
-                            <p>bootstrap,React js,Node js, </p>
+                            <ul>
+                                ${data.frameworks.map(data => {
+                return (
+                    `<li>${data.title}<span class="badge badge-secondary ms-1">${data.framework}</span> </li>`
+                )
+            }).join(' ')}
+                        
+                            
+                           
+                            </ul>
+                           
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                
             </div>
         </div>
             `
