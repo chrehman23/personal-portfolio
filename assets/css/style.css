@@ -3408,12 +3408,20 @@ header.sticky #hamburger {
   width: 25%;
   float: left;
 }
+
 .modal-open {
   overflow: initial;
 }
-#carouselExampleIndicators > button{
+
+#carouselExampleIndicators>button {
   background-color: transparent !important;
+  width: 25px !important;
 }
+
+#carouselExampleIndicators:hover>button {
+  background-color: #00000040 !important;
+}
+
 @media (max-width: 767px) {
   .single-achivement {
     width: 50% !important;
