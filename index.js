@@ -14,9 +14,12 @@ function modalOpen(data) {
                 <div class="col-lg-5">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        ${data.images.map((data, index) => {
+                            return (
+                                `
+                                <li data-target="#carouselExampleIndicators" data-slide-to="${index}" class="${index == 0 ? 'active' : ''}"></li>
+                                `)
+                        }).join('')}
                         </ol>
                         <div class="carousel-inner">
                         ${data.images.map((data, index) => {
