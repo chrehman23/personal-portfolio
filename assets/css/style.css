@@ -4129,3 +4129,11 @@ footer.footer_white p {
     -o-transform: rotate(90deg) translateX(-50%);
   }
 }
+.circlechart{
+  /* margin: auto;
+  width: 100% !important;
+  max-width: 120px !important;
+  height: auto !important; */
+}
+.circle-chart {
+}
