@@ -4128,11 +4128,21 @@ footer.footer_white p {
     -ms-transform: rotate(90deg) translateX(-50%);
     -o-transform: rotate(90deg) translateX(-50%);
   }
+
+  .design-skills .circlechart {
+    display: none;
+  }
+
+  .design-skills .single-design-skill {
+    margin-top: 0px !important;
+    display: flex;
+    align-items: center;
+  }
 }
-.circlechart{
+
+.circlechart {
   /* margin: auto;
   width: 100% !important;
   max-width: 120px !important;
   height: auto !important; */
 }
- 
