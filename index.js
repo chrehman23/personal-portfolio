@@ -53,7 +53,7 @@ function modalOpen(data) {
                     <h6>Languages Used</h6>
                     <div class="d-flex flex-wrap" style="line-height: 17px;">
                     ${data.languages.map(data => {
-        return (`<span class="badge badge-secondary mr-1">${data}</span>`)
+        return (`<span class="badge badge-secondary m-1">${data}</span>`)
     }).join('')}
                    </div>
                     <h6>Stacks Used</h6>
