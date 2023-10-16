@@ -2102,6 +2102,14 @@
             $(".mobile-nav").removeClass("show")
             $("#hamburger").removeClass("open")
         })
+        $("#hamburger").on('click', function () {
+            $(".mobile-nav").addClass("show")
+            $("#hamburger").addClass("open")
+        })
+        $(".close-nav").on('click', function () {
+            $(".mobile-nav").removeClass("show")
+            $("#hamburger").removeClass("open")
+        })
         let typed = new Typed('.profession', {
             strings: ["Freelance Developer", "Front-End Developer", "Back-End Developer", "React-JS Developer", "Web3-JS Developer", "BlockChain Developer", "Node-JS Developer", 'MERN Stack Developer', 'Excel Expert'],
             typeSpeed: 80,
